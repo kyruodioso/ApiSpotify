@@ -1,8 +1,8 @@
 (function(w) {
   w.onload = function() {
     console.log("la pagina se cargo");
-    fetch("http/swapi.co/api/planets/1/")
+    fetch("https://swapi.co/api/planets/1/?format=wookiee")
       .then(res => res.json())
       .then(resul => console.log(resul));
   };
-}.call(window));
+}.call(null, window));
